@@ -57,3 +57,15 @@ You can setup this repository by following this manual
     ```
    http://localhost:9292
    ```
+
+## Application
+This application is a simple web API that allows users to:
+
+-  Register/login to the aplication
+- view all listed projects
+- Add new project to their portfolio
+- Update existing project data
+- Delete project data
+- can have maxumum of ten skills
+- View listed skills,delete and update
+- Inoder to use the application the user must be logged in
