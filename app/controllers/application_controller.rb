@@ -6,10 +6,17 @@ class ApplicationController < Sinatra::Base
     { message: "Good luck with your project!" }.to_json
   end
 
-  post "/projects/create" do
-    data = request.body.read
-    data.to_s
-   
+  # post "/projects/create" do
+  #   data = request.body.read
+  #   data.to_s
+  # end
+  get '/users' do
+    user = User.all
+    user.to_json
+  end
+
+  post '/users' do
+    user = User.create(params)
   end
 end
 
