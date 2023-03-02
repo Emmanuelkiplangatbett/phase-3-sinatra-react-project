@@ -10,13 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_01_174907) do
+ActiveRecord::Schema.define(version: 2023_03_02_104136) do
 
   create_table "projects", force: :cascade do |t|
-    t.string "title", null: false
-    t.string "description", null: false
-    t.datetime "createdAt"
-    t.integer "status", default: 0, null: false
+    t.string "project_title"
+    t.string "project_description"
+    t.string "project_language"
+    t.integer "user_id"
+  end
+
+  create_table "skills", force: :cascade do |t|
+    t.string "skill_name"
+    t.integer "user_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "email"
+    t.string "password"
   end
 
 end

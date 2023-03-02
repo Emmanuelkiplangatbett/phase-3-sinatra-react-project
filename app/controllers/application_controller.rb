@@ -2,86 +2,93 @@ class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
   
   # Add your routes here
-  # get "/" do
-  #   { message: "Good luck with your project!" }.to_json
-  # end
+  get "/" do
+    { message: "Good luck with your project!" }.to_json
+  end
 
-  # define routes
-get '/' do
-  erb :index
+  post "/projects/create" do
+    data = request.body.read
+    data.to_s
+   
+  end
 end
 
-get '/register' do
-  erb :register
-end
+#   # define routes
+# get '/' do
+#   erb :index
+# end
 
-post '/register' do
-  # handle user registration
-end
+# get '/register' do
+#   erb :register
+# end
 
-get '/login' do
-  erb :login
-end
+# post '/register' do
+#   # handle user registration
+# end
 
-post '/login' do
-  # handle user login
-end
+# get '/login' do
+#   erb :login
+# end
 
-get '/logout' do
-  # handle user logout
-end
+# post '/login' do
+#   # handle user login
+# end
 
-get '/dashboard' do
-  # handle user dashboard
-end
+# get '/logout' do
+#   # handle user logout
+# end
 
-get '/projects' do
-  # handle project listing
-end
+# get '/dashboard' do
+#   # handle user dashboard
+# end
 
-get '/projects/new' do
-  # handle new project form
-end
+# get '/projects' do
+#   # handle project listing
+# end
 
-post '/projects/new' do
-  # handle new project submission
-end
+# get '/projects/new' do
+#   # handle new project form
+# end
 
-get '/projects/:id/edit' do
-  # handle project edit form
-end
+# post '/projects/new' do
+#   # handle new project submission
+# end
 
-post '/projects/:id/edit' do
-  # handle project update submission
-end
+# get '/projects/:id/edit' do
+#   # handle project edit form
+# end
 
-post '/projects/:id/delete' do
-  # handle project deletion
-end
+# post '/projects/:id/edit' do
+#   # handle project update submission
+# end
 
-get '/skills' do
-  # handle skill listing
-end
+# post '/projects/:id/delete' do
+#   # handle project deletion
+# end
 
-get '/skills/new' do
-  # handle new skill form
-end
+# get '/skills' do
+#   # handle skill listing
+# end
 
-post '/skills/new' do
-  # handle new skill submission
-end
+# get '/skills/new' do
+#   # handle new skill form
+# end
 
-get '/skills/:id/edit' do
-  # handle skill edit form
-end
+# post '/skills/new' do
+#   # handle new skill submission
+# end
 
-post '/skills/:id/edit' do
-  # handle skill update submission
-end
+# get '/skills/:id/edit' do
+#   # handle skill edit form
+# end
 
-post '/skills/:id/delete' do
-  # handle skill deletion
-end
+# post '/skills/:id/edit' do
+#   # handle skill update submission
+# end
+
+# post '/skills/:id/delete' do
+#   # handle skill deletion
+# end
 # # Home page
 # require 'sinatra'
 # require 'sinatra/activerecord'
@@ -214,4 +221,4 @@ end
 # end
 
 
-end
+# end
