@@ -15,10 +15,33 @@ class ApplicationController < Sinatra::Base
     user.to_json
   end
 
-  post '/users' do
-    user = User.create(params)
+  # post '/users' do
+  #   user = User.create(params)
+  # end
+  post 'users/create' do
+    data = request.body.read
+    data.to_s
+  end
+
+  get '/skills' do
+    skill = Skill.all
+    skill.to_json
+  end
+
+  post '/skills' do
+    skill = Skill.create_skill(params)
+    skill.to_json
+  end
+
+  
+
+  get '/projects' do
+    project = Project.all
+    project.to_json
   end
 end
+
+
 
 #   # define routes
 # get '/' do

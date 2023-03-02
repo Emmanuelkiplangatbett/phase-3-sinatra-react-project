@@ -13,6 +13,8 @@ use Rack::JSONBodyParser
 
 # Our application
 run ApplicationController
+run SessionController
+run UsersController
 # require "sinatra/activerecord"
 
 # class Project < ActiveRecord::Base
