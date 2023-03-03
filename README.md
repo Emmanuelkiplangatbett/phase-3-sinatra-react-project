@@ -39,7 +39,7 @@ You can setup this repository by following this manual
 
 1. Clone the repository
     ```{shell}
-   git clone 
+   git clone   (git@github.com:Emmanuelkiplangatbett/phase-3-sinatra-react-project.git)
    ```
 2. Ensure the ruby gems are setup in your machine
     ```{shell}
@@ -59,7 +59,7 @@ You can setup this repository by following this manual
    ```
 
 ## Application
-This application is a simple web API that allows users to:
+This Portfolio application is a simple web API that allows users to:
 
 -  Register/login to the aplication
 - view all listed projects
