@@ -106,7 +106,45 @@ Database schema definitions.
 
 
 
+### ROUTES Example
 
+1. `/hello` - Presents a simple welcome message.
+2. `/auth/register` - Create a new user account.
+   
+   ```{json}
+   ## REQUEST BODY
+   {
+    "user_name": "John Doe",
+    "email": "mail@mail.com",
+    "password": "12345678"
+   }
+   ```
+3. `/auth/login` - Log in a user using email and password.
+
+   ```{json}
+   ## REQUEST BODY
+   {
+    "email": "mail@mail.com",
+    "password": "12345678"
+   }
+   ```
+4. `/projects/create` - Add a new TODO item.
+
+   ```{json}
+   ## REQUEST BODY
+   {
+    "title": "Make Breakfast",
+    "description": "Prepare milk and cereal",
+    "language": "Ruby"
+   }
+   ```
+5. `/projects` - List all projects.
+
+
+
+   ```
+6. `/projects/update/:id` - Update an existing project.
+7. `/projects/delete/:id` - Delete a project
 
 
 
@@ -125,6 +163,8 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
 IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
+
+
 
 
 ## Author
