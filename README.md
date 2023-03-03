@@ -30,8 +30,7 @@ This application has been built with the following tools:
 - **Puma `v6.1`**
 - **rerun `v0.14`**
 - **Sinatra `v3.0.5`**
-- **Bootstrap `v5.3.0`**
-- **ERB `v4.0`**
+
 
 
 ## Setup
@@ -164,6 +163,9 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
 
+# Contributing
+
+our aplication is build with little knowledge of one language,it is however,open to anyone who would wish to contribute to our project. you can also refer here https://stackoverflow.com/questions/8503559/what-is-linting to learn more and run tests. software methods and tools refer herehttp://www.methodsandtools.com/archive/archive.php?id=33.
 
 
 
