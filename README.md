@@ -71,6 +71,45 @@ This Portfolio application is a simple web API that allows users to:
 - Inoder to use the application the user must be logged in
 
 
+
+### MODELS
+Database schema definitions.
+
+#### Projects
+
+| COLUMN      | DATA TYPE                                       | DESCRIPTION                         | 
+|-------------|-------------------------------------------------|-------------------------------------|
+| id          | Integer                                         | Unique identifier.                  |
+| title       | String                                          | The name of the project               |
+| description | String                                          | A short description about the project. |
+| language    | string                                          | The name of the language            |
+| user_id     | string                                          |  A unique identifier
+
+
+#### Skills
+| COLUMN      | DATA TYPE                                       | DESCRIPTION                         | 
+|-------------|-------------------------------------------------|-------------------------------------|
+| id          | Integer                                         | Unique identifier.                  |
+| name        | String                                          | The name of the skill               |
+| used_id     | String                                          | A unique identifier.                |
+
+
+
+#### USER
+| COLUMN        | DATA TYPE | DESCRIPTION                           | 
+|---------------|-----------|---------------------------------------|
+| id            | Integer   | Unique identifier.                    |
+| user_name     | String    | User's full name.                     |
+| password_hash | String    | User's password hashed with `BCrypt`. |
+
+
+
+
+
+
+
+
+
 ## LICENSE
 This repository is distributed under the MIT License
 
