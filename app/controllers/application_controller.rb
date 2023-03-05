@@ -165,19 +165,6 @@ end
 # post '/skills' do
 #   user = User.find(session[:user_id])
   
-#   if user.skills.count < 10
-#     skill = Skill.new(name: params[:name], user: user)
-    
-#     if skill.save
-#       redirect '/portfolio'
-#     else
-#       @error = "Unable to create skill."
-#       erb :portfolio
-#     end
-#   else
-#     @error = "You have reached the maximum number of skills."
-#     erb :portfolio
-#   end
-# end
+
 
 
