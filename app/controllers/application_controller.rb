@@ -191,16 +191,7 @@ end
 #   end
 # end
 
-# delete '/skills/:id' do
-#   skill = Skill.find(params[:id])
-  
-#   if skill.destroy
-#     redirect '/portfolio'
-#   else
-#     @error = "Unable to delete skill."
-#     erb :portfolio
-#   end
-# end
+
 
 
 # end
