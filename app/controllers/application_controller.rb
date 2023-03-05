@@ -180,18 +180,4 @@ end
 #   end
 # end
 
-# put '/skills/:id' do
-#   skill = Skill.find(params[:id])
-  
-#   if skill.update(name: params[:name])
-#     redirect '/portfolio'
-#   else
-#     @error = "Unable to update skill."
-#     erb :portfolio
-#   end
-# end
 
-
-
-
-# end
