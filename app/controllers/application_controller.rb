@@ -38,15 +38,16 @@ class ApplicationController < Sinatra::Base
   end
 
    # Update project data from the database
-  patch '/projects/:id' do
+   patch '/projects/:id' do
     project = Project.find(params[:id])
     project.update(
-      title: params[:title],
+      project_title: params[:project_title],
       project_description: params[:project_description],
       project_language: params[:project_language]
     )
     project.to_json
   end
+  
 
   # Delete a project by :id from the database
   delete '/projects/:id' do
@@ -159,27 +160,7 @@ end
 #   end
 # end
 
-# put '/projects/:id' do
-#   project = Project.find(params[:id])
-  
-#   if project.update(title: params[:title], description: params[:description])
-#     redirect '/portfolio'
-#   else
-#     @error = "Unable to update project."
-#     erb :portfolio
-#   end
-# end
 
-# delete '/projects/:id' do
-#   project = Project.find(params[:id])
-  
-#   if project.destroy
-#     redirect '/portfolio'
-#   else
-#     @error = "Unable to delete project."
-#     erb :portfolio
-#   end
-# end
 
 # post '/skills' do
 #   user = User.find(session[:user_id])
