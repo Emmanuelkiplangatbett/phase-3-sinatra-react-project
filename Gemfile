@@ -35,7 +35,7 @@ gem 'sinatra-cross_origin', '~> 0.4.0'
 
 # Require all files in a folder
 gem "require_all", "~> 3.0"
-# gem "faker"
+gem "faker"
 
 # These gems will only be used when we are running the application locally
 group :development do
@@ -45,7 +45,7 @@ group :development do
   # Automatically reload when there are changes
   # https://github.com/alexch/rerun
   gem "rerun"
-  gem "faker"
+  # gem "faker"
 end
 
 # These gems will only be used when we are running tests
@@ -54,7 +54,7 @@ group :test do
   gem "rack-test", "~> 1.1"
   gem "rspec", "~> 3.10"
   gem "rspec-json_expectations", "~> 2.2"
-  # gem "faker"
+  #  gem "faker"
 end
 
 gem 'bcrypt', '~> 3.1', '>= 3.1.18'
